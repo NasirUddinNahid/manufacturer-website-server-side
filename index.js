@@ -1,6 +1,6 @@
-// const express = require('express')
+const express = require('express')
 const app = express()
-var jwt = require('jsonwebtoken');
+// var jwt = require('jsonwebtoken');
 const port = process.env.PORT || 5000
 require('dotenv').config()
 var cors = require('cors')
