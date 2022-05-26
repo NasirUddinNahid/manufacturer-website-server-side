@@ -1,4 +1,4 @@
-const express = require('express')
+// const express = require('express')
 const app = express()
 var jwt = require('jsonwebtoken');
 const port = process.env.PORT || 5000
@@ -277,10 +277,10 @@ async function run() {
     }
 }
 
-// run().catch(console.dir);
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
-// })
+run().catch(console.dir);
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
