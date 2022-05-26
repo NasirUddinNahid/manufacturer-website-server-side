@@ -7,7 +7,7 @@ var cors = require('cors')
 app.use(cors())
 app.use(express.json())
 // 
-// const stripe = require("stripe")(process.env.SECRET_KEY);
+const stripe = require("stripe")(process.env.SECRET_KEY);
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.jly5jrm.mongodb.net/?retryWrites=true&w=majority`;
 function verifyToken(req, res, next) {
