@@ -1,6 +1,8 @@
 # manufacturer-website-server-side-NasirUddinNahid
--database atlas using
--mongo db
--admin using
--jwt token using
--secret key using
+
+## Available Scripts
+- database atlas using
+- mongo db
+- admin using
+- jwt token using
+- secret key using
